@@ -1,16 +1,116 @@
-# React + Vite
+# 📦 LocalBox Miner (React CRUD App)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React CRUD application** that allows users to **add, edit, delete, and store records** using **localStorage**.  
+It features a **glassmorphism UI**, responsive dashboard, form validation, and real-time statistics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- ➕ Add user records  
+- ✏️ Edit existing records  
+- 🗑️ Delete records  
+- 💾 Persistent storage using **localStorage**  
+- 📊 Live dashboard statistics  
+- ✅ Form validation  
+- 🎨 Premium glassmorphism UI  
+- 📱 Fully responsive design  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React (Hooks)**
+  - `useState`
+  - `useEffect`
+- **JavaScript (ES6+)**
+- **CSS (Custom Styling)**
+- **localStorage API**
+
+---
+
+yaml
+Copy code
+
+---
+
+## 🧩 Components Overview
+
+### 🔹 RecordForm.jsx
+- Handles user input
+- Validations included:
+  - Required fields
+  - Valid email format
+  - 10-digit phone number
+  - Age between 1 and 120
+- Supports **Add** and **Edit** modes
+
+### 🔹 Dashboard.jsx
+- Displays statistics:
+  - Total records
+  - Last added user
+  - Storage type
+- Shows user records in a table
+- Edit and delete actions
+
+### 🔹 App.jsx
+- Main application controller
+- Manages global state
+- Syncs data with localStorage
+
+---
+
+## 📊 Dashboard Statistics
+
+- **Total Records** – Total number of stored users  
+- **Last Added** – Most recently added user  
+- **Storage** – Uses browser localStorage  
+
+---
+
+## 💾 Local Storage
+
+All data is stored automatically in the browser using the key:
+
+localbox_records
+
+yaml
+Copy code
+
+Records remain saved even after page refresh.
+
+---
+
+## 🎨 UI Highlights
+
+- Glassmorphism cards
+- Smooth hover animations
+- Gradient buttons
+- Animated table rows
+- Sticky table header
+- Custom scrollbar
+
+---
+
+## 📱 Responsive Design
+
+- Desktop & tablet optimized
+- Adaptive grid layout
+- Mobile-friendly interactions
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/localbox-miner.git
+
+# Navigate to project folder
+cd localbox-miner
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
